@@ -1,9 +1,18 @@
 # Тестовое задание
 ***
+
+Приложение написано на стеке:
+
+* Apache Camel 3.18
+* Apache Camel Rest
+* Apache Camel Netty
+* Spring Boot
+* RabbitMQ
+
 ## Модули приложения
 ### [phone-message-divided-route-chain](./phone-message-divided-route-chain/)
 ***
-Цепочка маршрутов резделённая на классы
+Цепочка маршрутов разделена на классы
 
 _[Описание работы](#explanation)_
 
@@ -54,7 +63,7 @@ docker compose logs phone-message -f
 ### Вариант №2
 **Запуск Standalone приложения**
 
-Потребуется установленные Java 11 и RabbitMQ последней версии
+Потребуется установленные Java 11 и RabbitMQ 3.10
 
 * [Java](https://jdk.java.net/archive/)
 * [RabbitMQ](https://www.rabbitmq.com/download.html)
@@ -67,7 +76,7 @@ Jar файлы можно найти в разделе релизов
 Потребуется скачать и распаковать архив из ветки master.
 Или же, вопспользоваться инструментами IDE и импортировать проект напрямую
 
-Так же понадобится JDK 11 версии, и RabbitMQ последней версии
+Так же понадобится JDK 11 и RabbitMQ 3.10
 
 * [Java](https://jdk.java.net/archive/)
 * [RabbitMQ](https://www.rabbitmq.com/download.html)
@@ -114,7 +123,7 @@ Jar файлы можно найти в разделе релизов
 **Цепочка маршрута:**
 
 1. Приём HTTP POST запроса на сервер
-2. При наличии тела запроса, отвечает пустым сообщнием с HTTP кодом 200 OK
+2. При наличии тела запроса, отвечает пустым сообщнием HTTP 200 OK
 3. Отправляет RPC запрос брокеру сообщений
 4. Получает ответ от брокера (Следствие RPC запроса)
    и обрабатывает сообщение в Processor
