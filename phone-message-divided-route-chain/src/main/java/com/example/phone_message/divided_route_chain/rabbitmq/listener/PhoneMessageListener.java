@@ -9,7 +9,6 @@ import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
-import javax.xml.crypto.Data;
 import java.nio.charset.StandardCharsets;
 import java.text.MessageFormat;
 import java.time.Instant;

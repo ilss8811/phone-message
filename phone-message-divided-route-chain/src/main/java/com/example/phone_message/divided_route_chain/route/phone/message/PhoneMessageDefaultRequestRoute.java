@@ -1,7 +1,7 @@
 package com.example.phone_message.divided_route_chain.route.phone.message;
 
-import com.example.phone_message.divided_route_chain.route.phone.message.configuration.PhoneMessageRouteUriPath;
 import com.example.phone_message.divided_route_chain.route.RouteUtils;
+import com.example.phone_message.divided_route_chain.route.phone.message.configuration.PhoneMessageRouteUriPath;
 import org.apache.camel.ExchangePattern;
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;

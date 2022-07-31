@@ -1,7 +1,7 @@
 package com.example.phone_message.divided_route_chain.processor;
 
-import com.example.phone_message.divided_route_chain.route.JsonUtils;
 import com.example.phone_message.divided_route_chain.dto.PhoneMessageDto;
+import com.example.phone_message.divided_route_chain.route.JsonUtils;
 import org.apache.camel.Exchange;
 import org.apache.camel.Message;
 import org.apache.camel.Processor;
