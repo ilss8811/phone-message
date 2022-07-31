@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+
+  phone-message:
+    container_name: phone-message
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: java -jar /usr/phone-message/phone-message-divided-route-chain/target/phone-message-divided-route-chain-0.0.1-SNAPSHOT.jar --spring.rabbitmq.host=rabbitmq
+    ports:
+      - 8080:8080
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3.10-management
+    ports:
+      - 5672:5672
+      - 127.0.0.1:15672:15672

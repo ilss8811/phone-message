@@ -1,0 +1,23 @@
+camel:
+  springboot:
+    name: PhoneMessageDividedRouteChain
+
+server:
+  address: 0.0.0.0
+  port: 8080
+
+spring:
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+
+application:
+  rest:
+    component-id: netty-http
+  broker:
+    request-rpc-queue: phone.message.rpc.request
+    request-default-queue: phone.message.default.request
+    exchange: phone.message.exchange
+    rpc-routing-key: rpc
+    default-routing-key: default
