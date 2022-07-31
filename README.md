@@ -5,7 +5,7 @@
 ***
 Цепочка маршрутов резделённая на классы
 
-_[Описание работы][1]_
+_[Описание работы](#explanation)_
 
 1. [RestPhoneMessageRoute](./phone-message-divided-route-chain/src/main/java/com/example/phone_message/divided_route_chain/route/phone/message/RestPhoneMessageRoute.java) 
 2. [PhoneMessageOkResponseRoute](./phone-message-divided-route-chain/src/main/java/com/example/phone_message/divided_route_chain/route/phone/message/PhoneMessageOkResponseRoute.java) 
@@ -16,6 +16,8 @@ _[Описание работы][1]_
 ### [phone-message-monolith-route-chain](./phone-message-monolith-route-chain/)
 ***
 Цепочка маршрута сосредоточена в одном классе
+
+_[Описание работы](#explanation)_
 
 * [PhoneMessageMonolithRoute](./phone-message-monolith-route-chain/src/main/java/com/example/phone_message/monolith_route_chain/route/phone/message/PhoneMessageMonolithRoute.java)
 
@@ -105,11 +107,11 @@ Jar файлы можно найти в разделе релизов
 5. Сообщение отправлено и доставлено брокеру
 
 ![](./logs-explanation.png)
-## Описание работы
+<a name="links"><h2>Описание работы</h2></a>
 
 [1]:[]
 
-**Цепочка маршрута разделена на отдельные классы:**
+**Цепочка маршрута:**
 
 1. Приём HTTP POST запроса на сервер
 2. При наличии тела запроса, отвечает пустым сообщнием с HTTP кодом 200 OK
